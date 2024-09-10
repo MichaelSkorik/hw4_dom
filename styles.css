@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+input[type="text"],
+select.form-control {
+    padding: 5px;
+    margin: 10px 0;
+    width: 200px;
+}
+
+span {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    visibility: hidden;
+    margin-top: 20px;
+}
+
+.error {
+    border-color: red;
+}
+
+@keyframes fadeInLeftBig {
+    from {
+        opacity: 0;
+        transform: translate3d(-2000px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.animate_animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animate_fadeInLeftBig {
+    animation-name: fadeInLeftBig;
+}
